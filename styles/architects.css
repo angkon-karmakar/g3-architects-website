@@ -136,14 +136,23 @@ header{
 #exp-btn{
     margin-top: -7rem;
     margin-left: -3rem;
+    padding: 45px 42px;
 
 }
 #exp-badge{
     font-weight: bold;
     font-size: 4.0625rem;
+    
 }
 #exp-year{
     font-size: 1.5625rem;
+    font-weight: medium;
+}
+.featured-architect{
+    width: 100%;
+}
+.featured-architect img{
+    width: 100%;
 }
 
 /* some fact related styles */
@@ -192,12 +201,13 @@ header{
 /* responsive media quary small devices*/
 @media screen and (max-width:576px) {
     
-    .navbar , .teams{
+    .navbar , .teams ,.features{
         flex-direction: column;
     }
     .team-img-container ,
     .facts-container , 
-    .sponsor-companies{
+    .sponsor-companies
+    {
         grid-template-columns: repeat(1,1fr);
     }
     .our-features{
@@ -211,7 +221,9 @@ header{
         justify-items: center;
         gap: 50px;
     }
-    
+    #exp-btn{
+        display: none;
+    }
 }
 
 /* medium size responsive */
